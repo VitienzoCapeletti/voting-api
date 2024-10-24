@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=voting'
+      - 'POSTGRES_PASSWORD=voting'
+      - 'POSTGRES_USER=voting'
+    ports:
+      - '5432'
